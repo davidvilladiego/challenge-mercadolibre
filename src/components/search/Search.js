@@ -9,9 +9,7 @@ export const SearchComponent = () => {
     }
     const search = (e) => {
         e.preventDefault();
-        console.log('buscar')
-        console.log(inputValue)
-        navigate('/detail', {replace: true});
+        navigate(`/items?search=${inputValue}`, {replace: true});
     }
 
     return (
