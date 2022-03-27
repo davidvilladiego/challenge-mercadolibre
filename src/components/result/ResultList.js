@@ -1,18 +1,19 @@
 import React from 'react';
-import {useFetchProducts} from "../../hooks/useFetchGifs";
+import {useFetchProducts} from "../../hooks/useFetchProducts";
 import {ResultItemComponent} from "./ResultItem";
 
 export const ResultListComponent = (query) => {
 
-    const {products, loading} = useFetchProducts(query);
-
+    const {listProducts, loading} = useFetchProducts(query);
+    const {author, categories, items} = listProducts
+console.log(items)
     return (
         <div className='row bg-danger'>
             {loading && (<h3>cargando...</h3>)}
-            {products && (
+            {items && (
                 <>
                     {
-                        products.map(product => (
+                        items.map(product => (
                             <ResultItemComponent
                                 key={product.id}
                                 {...product}
