@@ -1,3 +1,8 @@
+/***
+ * ResultItemComponent componente donde muestra el bloque de información de cada producto
+ * @type {object} navigate: hook que se utiliza para navegar dentro del router
+ ***/
+
 import React from 'react';
 import {useNavigate} from "react-router-dom";
 import {currencyFormat} from "../../helpers/utilsFuncions";

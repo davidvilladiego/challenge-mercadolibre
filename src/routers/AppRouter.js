@@ -1,3 +1,7 @@
+/***
+ * AppRouter componente se crean todas las rutas de la App
+ ***/
+
 import React from 'react';
 import {Routes, Route, BrowserRouter} from "react-router-dom";
 import {SearchComponent} from "../components/search/Search";

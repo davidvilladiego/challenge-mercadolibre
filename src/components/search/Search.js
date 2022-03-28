@@ -1,3 +1,12 @@
+/***
+ * SearchComponent componente que se utiliza para realizar la busqueda de un producto
+ * @type {object} navigate: hook que se utiliza para navegar dentro del router
+ * @type {string} inputValue: variable que guarda el estado de la caja de texto
+ * @type {function} setInputValue: funcion que sirve para cambiar el estado inicial
+ * @type {function} handleInputChange: funcion que sirve para obtener el valor de la caja de texto
+ * @type {function} search: funcion que sirve para realizar la busqueda de un producto y activa una ruta
+ ***/
+
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import './Search.css';

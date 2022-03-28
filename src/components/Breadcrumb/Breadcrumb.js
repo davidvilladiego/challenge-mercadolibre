@@ -1,3 +1,8 @@
+/***
+ * BreadcrumbComponent componente donde se pinta y se valida el breadcrumb
+ * @type {array} array: array donde se guardan cada una de las categorias
+ ***/
+
 import React from 'react';
 import './Breadcrumb.css';
 

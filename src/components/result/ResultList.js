@@ -1,3 +1,13 @@
+/***
+ * ResultListComponent componente donde itera la información de cada producto
+ * @type {object} listProducts: objecto que contiene informacion de toda el api rest search?query=''
+ * @type {boolean} loading: variable que se utiliza para mnostrar el cargando
+ * @type {array} categories: array donde se guardar cada una de las categorias
+ * @type {object} items: objeto que contiene la informaición de todos los productos
+ * @type {boolean} validateData: variable que se utiliza para validar los datos de entrada
+ * @type {boolean} message: variable que se utiliza para validar el mensaje de productos no encontrado
+ ***/
+
 import React from 'react';
 import {useFetchProducts} from "../../hooks/useFetchProducts";
 import {ResultItemComponent} from "./ResultItem";
@@ -9,7 +19,6 @@ export const ResultListComponent = (query) => {
     const {categories, items} = listProducts
     const validateData = items && items.length > 0;
     const message = !validateData && !loading;
-    console.log(message);
     return (
         <div className='row'>
             {loading && (
@@ -22,7 +31,7 @@ export const ResultListComponent = (query) => {
             )}
             {message && (
                 <div className='text-center text-none'>
-                    ¡Producto no encontrado intente nuevamente!
+                    ¡No se encontraron productos intente nuevamente!
                 </div>
             )}
             {validateData && (

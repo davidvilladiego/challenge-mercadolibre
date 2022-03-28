@@ -1,3 +1,12 @@
+/***
+ * SearchComponent componente que se utiliza para realizar la busqueda de un producto
+ * @type {function} mapListProduct: funcion que sirve para crear el objeto de la lista de productos
+ * @type {function} mapItemProduct: funcion que sirve para crear el objeto del detalle de productos
+ * @type {function} getResultsItem: funcion que sirve para mapaer la respuesta de la api de lista de productos
+ * @type {function} getResultsItemByDescrip: funcion que sirve para mapaer la respuesta de la api de detalle de productos
+ * @type {function} getValueByKey: funcion que sirve para retornar el valor de un tag dentro de array object
+ ***/
+
 export const mapListProduct = (response) => {
     const rs = {
         author: {

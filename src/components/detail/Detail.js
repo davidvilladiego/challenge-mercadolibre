@@ -1,3 +1,11 @@
+/***
+ * DetailComponent componente donde muestra el detalle del producto
+ * @type {string} id: variable que captura el id de la url
+ * @type {object} itemProduct: objecto que contiene informacion de toda el api rest search/id y search/id/description
+ * @type {object} item: objecto que contiene informacion del producto
+ * @type {array} categories: array donde se guardar cada una de las categorias
+ ***/
+
 import React from 'react';
 import {useParams} from "react-router-dom";
 import {useFetchItemProduct} from "../../hooks/useFetchItemProduct";
