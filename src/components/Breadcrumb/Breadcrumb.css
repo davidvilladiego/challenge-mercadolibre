@@ -10,10 +10,11 @@ li {
 }
 
 li a {
+    font-size: 14px;
     display: block;
     color: #999999;
     text-align: center;
-    padding-left: 14px;
+    padding-left: 10px;
     text-decoration: none;
 }
 
