@@ -2,7 +2,24 @@ import React from 'react';
 import './Breadcrumb.css';
 
 export const BreadcrumbComponent = ({categories}) => {
-    const array = categories && categories.splice(0, 5)
+    let array = categories && categories.splice(0, 5)
+    if (!array) {
+
+        array = [{
+            id: "1",
+            name: "Tecnologia"
+        }, {
+            id: "2",
+            name: "Apple"
+        }, {
+            id: "3",
+            name: "iOS"
+        }, {
+            id: "4",
+            name: "iPhone 11"
+        }];
+        console.log(array)
+    }
     return (
         array && (
             <ul className='list'>

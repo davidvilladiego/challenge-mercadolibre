@@ -48,7 +48,8 @@ function getResultsItemByDescrip({detail, description}) {
         condition: detail.condition,
         free_shipping: detail.shipping.free_shipping,
         sold_quantity: detail.sold_quantity,
-        description: description.plain_text
+        description: description.plain_text,
+        categories: detail.attributes
     };
 
     return products;

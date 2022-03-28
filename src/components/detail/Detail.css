@@ -1,3 +1,44 @@
-.card-image{
+.image-detail {
+    width: 680px;
+}
 
+.quantity {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 16px;
+    padding-top: 32px;
+    text-transform: capitalize;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    padding-bottom: 32px;
+    font-weight: 500;
+}
+
+.price {
+    margin: 0;
+    font-size: 46px;
+    padding-bottom: 32px;
+}
+
+.title-product {
+    margin: 0;
+    padding: 32px 32px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 16px;
+    color: #666666;
+    padding: 0px 0px 32px 32px;
+    text-align: justify;
+}
+
+.btn-pay{
+    background: #3483FA;
+    color: #EEEEEE;
+    width: 300px;
 }

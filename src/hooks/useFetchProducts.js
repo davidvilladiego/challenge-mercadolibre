@@ -17,7 +17,6 @@ export const useFetchProducts = ({query}) => {
     useEffect(() => {
         getListProducts(query)
             .then(resp => {
-                console.log(resp)
                 const listProducts = mapListProduct(resp);
                 setState({
                     listProducts: {...listProducts},

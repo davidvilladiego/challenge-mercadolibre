@@ -9,7 +9,7 @@ export const AppRouter = () => {
     return (
         <BrowserRouter>
             <SearchComponent/>
-            <div className='container'>
+            <div className='container bg-gray'>
                 <Routes>
                     <Route path="/items" element={<ResultComponent/>}/>
                     <Route path="/items/:id" element={<DetailComponent/>}/>
