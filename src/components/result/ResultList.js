@@ -6,13 +6,28 @@ import {BreadcrumbComponent} from "../Breadcrumb/Breadcrumb";
 export const ResultListComponent = (query) => {
 
     const {listProducts, loading} = useFetchProducts(query);
-    const {author, categories, items} = listProducts
+    const {categories, items} = listProducts
+    const validateData = items && items.length > 0;
+    const message = !validateData && !loading;
+    console.log(message);
     return (
         <div className='row'>
-            {loading && (<h3>cargando...</h3>)}
-            {items && (
+            {loading && (
+                <div className='text-center spinner'>
+                    <div className="spinner-border cl-gray" role="status">
+                    </div>
+                    <span className="spinner-text">Cargando...</span>
+                </div>
+
+            )}
+            {message && (
+                <div className='text-center text-none'>
+                    ¡Producto no encontrado intente nuevamente!
+                </div>
+            )}
+            {validateData && (
                 <>
-                    <BreadcrumbComponent categories={categories} />
+                    <BreadcrumbComponent categories={categories}/>
                     {
                         items.map(product => (
                             <ResultItemComponent

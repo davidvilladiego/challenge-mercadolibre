@@ -18,7 +18,6 @@ export const BreadcrumbComponent = ({categories}) => {
             id: "4",
             name: "iPhone 11"
         }];
-        console.log(array)
     }
     return (
         array && (

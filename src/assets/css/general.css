@@ -5,3 +5,21 @@
 #root {
     background: #EEEEEE;
 }
+
+.cl-gray {
+    background: #EEEEEE;
+}
+
+.spinner{
+    padding: 50px 0px;
+}
+
+.spinner-text{
+    padding-left: 10px;
+}
+
+.text-none{
+    padding: 50px 0px;
+    font-size: 20px;
+    text-decoration: underline;
+}

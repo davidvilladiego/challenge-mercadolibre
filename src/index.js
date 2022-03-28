@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {AppRouter} from "./routers/AppRouter";
 import './assets/css/general.css';
+import './assets/css/animate.css';
 
 ReactDOM.render(
     <AppRouter />,

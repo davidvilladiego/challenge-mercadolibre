@@ -15,6 +15,10 @@ export const useFetchProducts = ({query}) => {
     });
 
     useEffect(() => {
+        setState({
+            listProducts: [],
+            loading: true
+        });
         getListProducts(query)
             .then(resp => {
                 const listProducts = mapListProduct(resp);
@@ -23,7 +27,6 @@ export const useFetchProducts = ({query}) => {
                     loading: false,
                 });
             })
-
     }, [query])
 
 
