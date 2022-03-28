@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import './Search.css';
+import searchIcon from '../../assets/images/ic_Search2x.png';
+import logo from '../../assets/images/Logo_ML2x.png';
 
 export const SearchComponent = () => {
     const navigate = useNavigate();
@@ -13,14 +16,15 @@ export const SearchComponent = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg bg-nav">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
-
-                <form className="d-flex" onSubmit={search}>
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                <form className="d-flex center" onSubmit={search}>
+                    <img src={logo} alt='icon' className='logo'/>
+                    <input className="input-search" type="text" placeholder="Nunca dejes de buscar"
                            onChange={handleInputChange}/>
-                    <button className="btn btn-outline-success" type="submit" onClick={search}>Search</button>
+                    <button className="btn btn-search" type="submit" onClick={search}>
+                        <img src={searchIcon} alt='icon'/>
+                    </button>
                 </form>
             </div>
         </nav>

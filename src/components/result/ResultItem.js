@@ -14,11 +14,10 @@ export const ResultItemComponent = ({id, title, price, picture, address}) => {
         <div className="col-12" onClick={viewDetails}>
             <div className='card'>
                 <div className='row'>
-                    <div className='col-4 bg-secondary'>
-
-                        <img src={picture} className='card-image' alt='image'/>
+                    <div className='col-2'>
+                        <img src={picture} className='card-image-item' alt='image'/>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-8'>
                         <div className='card-body'>
                             <h5>{price.amount}</h5>
                             <p>{title}</p>

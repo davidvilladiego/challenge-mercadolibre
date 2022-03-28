@@ -6,7 +6,6 @@ export const DetailComponent = () => {
 
     const {id} = useParams();
     const {itemProduct, loading} = useFetchItemProduct(id);
-    console.log(itemProduct)
     const {item} = itemProduct;
     return (
         <>

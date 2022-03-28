@@ -1,17 +1,18 @@
 import React from 'react';
 import {useFetchProducts} from "../../hooks/useFetchProducts";
 import {ResultItemComponent} from "./ResultItem";
+import {BreadcrumbComponent} from "../Breadcrumb/Breadcrumb";
 
 export const ResultListComponent = (query) => {
 
     const {listProducts, loading} = useFetchProducts(query);
     const {author, categories, items} = listProducts
-console.log(items)
     return (
-        <div className='row bg-danger'>
+        <div className='row'>
             {loading && (<h3>cargando...</h3>)}
             {items && (
                 <>
+                    <BreadcrumbComponent categories={categories} />
                     {
                         items.map(product => (
                             <ResultItemComponent

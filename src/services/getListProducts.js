@@ -5,7 +5,7 @@ import {environment} from "../environments/environments";
 
 export const getListProducts = async (product) => {
 
-    const url = `${environment.endpoint}/sites/MLA/search?q=${product}`;
+    const url = `${environment.endpoint}/sites/MLA/search?q=${product}&limit=4`;
     const resp = await fetch(url);
     const response = await resp.json();
 

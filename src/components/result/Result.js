@@ -7,7 +7,7 @@ export const ResultComponent = () => {
 
     const location = useLocation();
 
-    const {search=''} = queryString.parse(location.search);
+    const {search='mac'} = queryString.parse(location.search);
 
     return (
         <ResultListComponent
